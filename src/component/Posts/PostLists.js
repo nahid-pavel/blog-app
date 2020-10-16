@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+
 import PostList from "./PostList";
 import { connect } from "react-redux";
 import Spinner from "react-bootstrap/Spinner";
@@ -12,7 +12,7 @@ const PostLists = ({ allPosts }) => {
   }, [allPosts]);
 
   if (posts.length > 0) {
-    return posts.map((post) => <PostList post={post} />);
+    return posts.map((post, index) => <PostList key={index} post={post} />);
   } else {
     return (
       <div className="d-flex justify-content-center align-items-center">

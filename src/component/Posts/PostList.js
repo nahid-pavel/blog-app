@@ -1,7 +1,6 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Userpic from "./user.png";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
 
 const PostList = ({ post }) => {
   return (
@@ -39,6 +38,7 @@ const PostList = ({ post }) => {
             </div>
             <div className="d-flex flex-column ">
               <img
+                alt="user_picture"
                 src={Userpic}
                 style={{ width: "20%", borderRadius: "50px" }}
               />

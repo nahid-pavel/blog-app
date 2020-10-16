@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PostLists from "../component/Posts/PostLists";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import CreatePost from "./CreatePost";
 
 const Posts = () => {
